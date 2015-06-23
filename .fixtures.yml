@@ -10,6 +10,6 @@ fixtures:
     jenkins: "https://github.com/jenkinsci/puppet-jenkins.git"
     java: "https://github.com/puppetlabs/puppetlabs-java.git"
     apt: "https://github.com/puppetlabs/puppetlabs-apt"
-
+    staging: "https://github.com/nanliu/puppet-staging"
   symlinks:
     role_ciserver: "#{source_dir}"
