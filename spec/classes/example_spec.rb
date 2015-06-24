@@ -17,6 +17,8 @@ describe 'role_ciserver' do
        
           it { is_expected.to contain_class('profile_base') }
           it { is_expected.to contain_class('profile_base::rspec_monitor') }
+          it { is_expected.to contain_class('profile_jenkins') }
+          it { is_expected.to contain_class('profile_jenkins::rspec_monitor') }
           it { is_expected.to contain_class('role_ciserver') }
 
         end

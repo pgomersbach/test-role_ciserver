@@ -17,13 +17,11 @@ describe 'role_ciserver class' do
         class { 'role_ciserver': }
         EOS
 
-        # Run it twice and test for idempotency
+        apply_manifest(pp, :catch_failures => false, :future_parser => true)
+        sleep(10) # Jenkins takes a while to start up
         apply_manifest(pp, :catch_failures => true, :future_parser => true)
+
       end
     end
-
-       
-   # a role can include one ore more profiles, testing if work idempotently with no errors is sufficient
-
   end
 end
