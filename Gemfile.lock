@@ -15,7 +15,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     CFPropertyList (2.3.1)
-    activesupport (4.2.2)
+    activesupport (4.2.3)
       i18n (~> 0.7)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
@@ -53,8 +53,6 @@ GEM
       serverspec (~> 2)
       specinfra (~> 2)
     builder (3.2.2)
-    celluloid (0.16.0)
-      timers (~> 4.0.0)
     coderay (1.1.0)
     diff-lcs (1.2.5)
     docker-api (1.21.4)
@@ -71,7 +69,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     faraday_middleware (0.9.1)
       faraday (>= 0.7.4, < 0.10)
-    ffi (1.9.8)
+    ffi (1.9.9)
     fission (0.5.0)
       CFPropertyList (~> 2.2)
     fog (1.31.0)
@@ -100,12 +98,12 @@ GEM
     fog-atmos (0.1.0)
       fog-core
       fog-xml
-    fog-aws (0.5.0)
+    fog-aws (0.6.0)
       fog-core (~> 1.27)
       fog-json (~> 1.0)
       fog-xml (~> 0.1)
       ipaddress (~> 0.8)
-    fog-brightbox (0.7.1)
+    fog-brightbox (0.7.2)
       fog-core (~> 1.22)
       fog-json
       inflecto (~> 0.0.2)
@@ -116,10 +114,10 @@ GEM
       mime-types
       net-scp (~> 1.1)
       net-ssh (>= 2.1.3)
-    fog-ecloud (0.2.0)
+    fog-ecloud (0.3.0)
       fog-core
       fog-xml
-    fog-google (0.0.5)
+    fog-google (0.0.6)
       fog-core
       fog-json
       fog-xml
@@ -150,7 +148,7 @@ GEM
     fog-serverlove (0.1.2)
       fog-core
       fog-json
-    fog-softlayer (0.4.6)
+    fog-softlayer (0.4.7)
       fog-core
       fog-json
     fog-storm_on_demand (0.1.1)
@@ -194,9 +192,9 @@ GEM
       memoist (~> 0.12)
       multi_json (= 1.11)
       signet (~> 0.6)
-    guard (2.12.6)
+    guard (2.12.7)
       formatador (>= 0.2.4)
-      listen (~> 2.7)
+      listen (>= 2.7, <= 4.0)
       lumberjack (~> 1.0)
       nenv (~> 0.1)
       notiffany (~> 0.0)
@@ -209,7 +207,6 @@ GEM
     hiera (1.3.4)
       json_pure
     highline (1.7.2)
-    hitimes (1.2.2)
     hocon (0.9.0)
     http-cookie (1.0.2)
       domain_name (~> 0.5)
@@ -222,8 +219,7 @@ GEM
     jwt (1.5.1)
     launchy (2.4.3)
       addressable (~> 2.3)
-    listen (2.10.1)
-      celluloid (~> 0.16.0)
+    listen (3.0.0)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     little-plugger (1.1.3)
@@ -325,13 +321,11 @@ GEM
     slop (3.6.0)
     spdx-licenses (1.0.0)
       json
-    specinfra (2.36.3)
+    specinfra (2.36.6)
       net-scp
       net-ssh
     thor (0.19.1)
     thread_safe (0.3.5)
-    timers (4.0.1)
-      hitimes
     travis (1.7.7)
       addressable (~> 2.3)
       backports
