@@ -32,7 +32,7 @@ GEM
       json (~> 1.4)
       nokogiri (>= 1.4.4)
     backports (3.6.4)
-    beaker (2.15.1)
+    beaker (2.16.0)
       aws-sdk (~> 1.57)
       docker-api
       fission (~> 0.4)
@@ -118,7 +118,7 @@ GEM
     fog-ecloud (0.1.1)
       fog-core
       fog-xml
-    fog-google (0.0.6)
+    fog-google (0.0.7)
       fog-core
       fog-json
       fog-xml
