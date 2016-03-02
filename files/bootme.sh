@@ -69,4 +69,4 @@ bundle exec rake spec_prep
 # copy to puppet module location
 cp -a /root/role_ciserver/spec/fixtures/modules/* $MODULEDIR
 echo "Run puppet apply"
-bash puppet apply -e "include role_ciserver"
+puppet apply -e "include role_ciserver"
