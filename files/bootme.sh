@@ -5,7 +5,7 @@
 # Usage:
 # Ubuntu / Debian: wget https://raw.githubusercontent.com/pgomersbach/test-role_ciserver/master/files/bootme.sh; bash bootme.sh
 #
-# Red Hat / CentOS: curl https://raw.githubusercontent.com/pgomersbach/test-role_ciserver/master/skeleton/files/bootme.sh -o bootme.sh; bash bootme.sh
+# Red Hat / CentOS: curl https://raw.githubusercontent.com/pgomersbach/test-role_ciserver/master/files/bootme.sh -o bootme.sh; bash bootme.sh
 # Options: add 3 as parameter to install 4.x release
 
 # default major version, comment to install puppet 3.x
@@ -62,11 +62,11 @@ fi
 
 # prepare bundle
 echo "Installing gems"
-bundle install --path vendor/bundle
+bundle install --path vendor/bundle --without development system_tests
 # install dependencies from .fixtures
 echo "Preparing modules"
 bundle exec rake spec_prep
 # copy to puppet module location
 cp -a /root/role_ciserver/spec/fixtures/modules/* $MODULEDIR
 echo "Run puppet apply"
-puppet apply -e "include role_ciserver"
+bash puppet apply -e "include role_ciserver"
