@@ -12,11 +12,9 @@ fixtures:
     vcsrepo: "https://github.com/puppetlabs/puppetlabs-vcsrepo"
     jenkins: "https://github.com/jenkinsci/puppet-jenkins.git"
     java: "https://github.com/puppetlabs/puppetlabs-java.git"
-    apt:
-      repo: "https://github.com/puppetlabs/puppetlabs-apt"
-      ref: "2.1.0"
+    apt: "https://github.com/puppetlabs/puppetlabs-apt"
     zypprepo: "https://github.com/deadpoint/puppet-zypprepo.git"
-    archive: "https://github.com/camptocamp/puppet-archive.git"
+    archive: "https://github.com/voxpupuli/puppet-archive.git"
     jenkins_job_builder: "https://github.com/puppet-community/puppet-jenkins_job_builder.git"
 
   symlinks:
