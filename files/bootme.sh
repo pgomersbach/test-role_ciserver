@@ -49,7 +49,7 @@ if [ -d /root/role_ciserver ]; then
   git pull
 else
   echo "Cloning repo"
-  git clone https://github.com/relybv/dirict-role_ciserver.git /root/role_ciserver
+  git clone https://github.com/pgomersbach/test-role_ciserver.git /root/role_ciserver
   cd /root/role_ciserver
 fi
 
